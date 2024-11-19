@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from mainGame.models import Player
 
-# Create your views here.
+def index(request):
+    user = Player
+    return render (request, "mainGame/index.html", {"user": user})
