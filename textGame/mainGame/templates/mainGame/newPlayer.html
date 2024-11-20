@@ -1,0 +1,19 @@
+{% extends "mainGame/index.html" %}
+
+{% block title %}
+Enter a Name
+{% endblock title %}
+
+
+{% block main %}
+<h2>Please enter your Name</h2>
+
+<p>It will be used during the entire game to personalize your experience!</p> <br>
+
+<form action="" method="POST"> {% csrf_token %}
+    {{form.as_p}}
+        <input type="submit" value="Let's Begin">
+</form>
+{% endblock main %}
+
+

@@ -1,0 +1,16 @@
+{% extends "mainGame/index.html" %}
+
+{% block title %}
+Exploring
+{% endblock title %}
+
+{% block main %}
+<p>Here goes the main game let's see if your name displays correctly {{player}}!</p>
+
+
+{% endblock main %}
+{% block footer %}
+<p>Made a mistake? Return to the beginning <a href={% url "game:index" %}>
+    here</a>
+</p>
+{% endblock footer %}

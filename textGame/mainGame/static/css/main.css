@@ -4,13 +4,17 @@ body {
 
 .center {
     padding: 70px 0;
-    border: 3px solid black;
     text-align: center;
     color: rgb(240, 255, 255);
 }
 
-button {
+button, a {
     color: black;
+}
+
+input[type="text"], [type="submit"]{
+    color: black; 
+    border: 3px solid black;
 }
 
 .silkscreen-regular {
